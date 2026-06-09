@@ -1,54 +1,46 @@
-# README Template
+# Designing an HR Database
 
-Below is a template provided for use when building your README file for students.
-
-# Project Title
-
-Project description goes here.
+You are the new data architect at **Tech ABC Corp**, a fast-growing video game company. The HR department has outgrown its employee spreadsheet and has asked you to design, build, and populate a proper relational database. In this project you'll take that request from raw requirements all the way to a working, populated database in AWS.
 
 ## Getting Started
 
-Instructions for how to get a copy of the project running on your local machine.
+1. Open **`Starter_File.ipynb`** in the project workspace
+2. Work through the notebook top to bottom — each section maps to a project step below.
+3. Grab your database credentials from the **Cloud Resources** tab when you reach the AWS connection step.
 
 ### Dependencies
 
-```
-Examples here
-```
-
-### Installation
-
-Step by step explanation of how to get a dev environment running.
-
-List out the steps
+The workspace comes preloaded with everything you need:
 
 ```
-Give an example here
+pandas, openpyxl, psycopg2, boto3
 ```
 
-## Testing
+### Files in this repo
 
-Explain the steps needed to run any automated tests
+| File | Purpose |
+|------|---------|
+| `Starter_File.ipynb` | Scaffolded notebook — your starting point |
+| `HR_Dataset_V2.xlsx` | Source HR data (employee records, 15 columns) |
 
-### Break Down Tests
+## Project Steps
 
-Explain what each test does and why
+1. **Data Architecture Foundations** — turn the HR request into a business proposal and a technical proposal.
+2. **Relational Database Design** — build conceptual, logical, and physical ERDs in Mermaid, normalized to 3NF.
+3. **Data Contract** — define `data_contract.json`, validate the Excel data against it in Python, and load the validated records into an AWS landing table.
+4. **Create a Physical Database** — build your 3NF tables with DDL, populate them from the landing table, and answer the CRUD questions.
+5. **Above and Beyond** *(optional)* — add a view, a stored procedure, and user-level security on salary data.
 
-```
-Examples here
-```
+## Deliverables
 
-## Project Instructions
+Submit the following from the project workspace:
 
-This section should contain all the student deliverables for this project.
+- Your completed notebook (all steps, with code run and output visible).
+- Your **`data_contract.json`** file (a new file you will create).
 
-## Built With
+## Rubric
 
-* [Item1](www.item1.com) - Description of item
-* [Item2](www.item2.com) - Description of item
-* [Item3](www.item3.com) - Description of item
-
-Include all items used to build project.
+Before submitting, review your work against the **project rubric** in the classroom to confirm you've met every requirement.
 
 ## License
 
